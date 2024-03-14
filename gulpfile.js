@@ -4,9 +4,9 @@ const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 
 function scripts() {
-    return gulp.src('./src/scripts/*.js')
+    return gulp.src('./src/styles/scripts/main.js')
         .pipe(uglify())
-        .pipe(gulp.dest('/dist/js'));
+        .pipe(gulp.dest('./dist/js'));
 }
 
 function styles() {
